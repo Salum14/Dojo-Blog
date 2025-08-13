@@ -3,10 +3,10 @@ import useFetch from './useFetch';
 
 const BlogDetails = () => {
         const { id } = useParams()
-        const { data: blog, error, isPending } = useFetch('https://dojoblogproject.netlify.app/blogs/' + id);
+        const { data: blog, error, isPending } = useFetch('/blogs/' + id);
         const history = useNavigate();
         const handleClick = () => {
-            fetch('https://dojoblogproject.netlify.app/blogs/' + blog.id,{
+            fetch('/blogs/' + blog.id,{
                 method: 'DELETE'
             }).then(() => {
                 history('/');

@@ -13,7 +13,7 @@ const Create = () => {
         const blog = { title, body, author};
         setIsPending(true);
         // console.log(blog)
-        fetch('https://dojoblogproject.netlify.app/blogs', {
+        fetch('/blogs', {
             method: 'POST',
             headers: {"Content-Type": "application/json" },
             body: JSON.stringify(blog)
