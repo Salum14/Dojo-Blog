@@ -11,6 +11,7 @@ const BlogDetails = () => {
             }).then(() => {
                 history('/');
             })
+            console.log("clicked blog: "+ blog.id)
         }
     return ( 
         <div className="blog-details">

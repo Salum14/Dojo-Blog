@@ -1,21 +1,21 @@
-export default function handler(req, res) {
-    const blogs = [
-      {
-        id: "1",
-        title: "My First Blog",
-        body: `Why do we use it?
-  It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. ...`,
-        author: "mario"
-      },
-      {
-        id: "2",
-        title: "Opening Party!",
-        body: `Why do we use it?
-  It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. ...`,
-        author: "yoshi"
-      }
-    ];
+// export default function handler(req, res) {
+//     const blogs = [
+//       {
+//         id: "1",
+//         title: "My First Blog",
+//         body: `Why do we use it?
+//   It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. ...`,
+//         author: "mario"
+//       },
+//       {
+//         id: "2",
+//         title: "Opening Party!",
+//         body: `Why do we use it?
+//   It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. ...`,
+//         author: "yoshi"
+//       }
+//     ];
   
-    res.status(200).json(blogs);
-  }
+//     res.status(200).json(blogs);
+//   }
   
